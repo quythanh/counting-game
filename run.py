@@ -9,7 +9,7 @@ class Handle():
 
     def play(self):
         try:
-            Range = int(input('Which number do you want to count to?\t')) # 30
+            Range = int(input('Which number do you want to count to? (≥ 20)\t')) # 30
             assert(Range >= 20), 'The range should be at least 20'
 
             limit = int(input(f'How many numbers can you add each time? (2 to {round(Range/5)})\t'))
