@@ -26,5 +26,6 @@ So we may have a situation like the following for 2 players:
     Player 1: 28, 29, 30
 
 => Player 1 is the winner.
+
 ---
 Run file "run.py"
