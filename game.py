@@ -1,7 +1,6 @@
 from random import randint
 from os import system
 from process import *
-from run import *
 
 class Game():
     def __init__(self, Range, limit, roles):
@@ -39,12 +38,3 @@ class Game():
         else:
             print('Error')
             return
-
-
-    def play_again(self):
-        cont = input('Continue? (yes or no)\t')
-        if cont.lower() == 'yes':
-            system('cls')
-            Handle().main()
-        else:
-            print('Goodbye :) Hope to see you soon.')
