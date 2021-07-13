@@ -6,14 +6,13 @@ class Handle():
     def __init__(self):
         pass
 
-
     def play(self):
         try:
             Range = int(input('Which number do you want to count to? (≥ 20)\t')) # 30
-            assert(Range>=20), 'The range should be at least 20'
+            assert(Range >= 20), 'The range should be at least 20'
 
-            limit = int(input(f'How many numbers can you add each time? (2 to {Range//5})\t'))
-            assert(limit>=2 and limit <= Range//5), 'You Suck'
+            limit = int(input(f'How many numbers can you add each time? (2 to {Range // 5})\t'))
+            assert(limit >= 2 and limit <= Range // 5), 'You Suck'
 
             roles = int(input('Who will go first? (1: You, 2: Computer)\t'))
 
@@ -26,16 +25,15 @@ class Handle():
                 self.play()
             else:
                 print('Goodbye :) Hope to see you soon.')
-                print('='*50)
+                print('=' * 50)
 
         except AssertionError as error:
             print('--->> Error: '+ error)
-            print('='*50)
+            print('=' * 50)
 
         except ValueError:
             print('--->> Error: You should type number')
-            print('='*50)
-
+            print('=' * 50)
 
     def help(self):
         lst_help = ["How to play\n\n", "Which number do you want to count to?\t", 3, 0,
@@ -52,7 +50,6 @@ class Handle():
             sleep(0.5)
         a = input("Press Enter to back")
         self.main()
-
 
     def main(self):
         system('cls')

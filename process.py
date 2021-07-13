@@ -53,7 +53,7 @@ class Process_input():
                 del self.numberList[:catch]
                 return self.numberList
             else:
-                random_number = randint(1,self.limit)
+                random_number = randint(1, self.limit)
                 print('Computer:\t' + str(self.numberList[:random_number]).strip('[]'))
                 del self.numberList[:random_number]
                 return self.numberList
